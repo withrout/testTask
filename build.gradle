@@ -40,6 +40,8 @@ allprojects {
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
+        implementation 'org.springframework.cloud:spring-cloud-starter-config'
+        implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
     }
 
     dependencyManagement {
@@ -53,6 +55,6 @@ allprojects {
     }
 
     application {
-        mainClass = 'ru.alfabank.Main'
+        mainClass = 'ru.alfabank.TestTaskApplication'
     }
 }
